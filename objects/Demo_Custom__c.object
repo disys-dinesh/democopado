@@ -9,7 +9,6 @@
         <formFactor>Large</formFactor>
         <type>Default</type>
     </actionOverrides>
-
     <actionOverrides>
         <actionName>Accept</actionName>
         <formFactor>Small</formFactor>
@@ -180,10 +179,16 @@
         <trackTrending>false</trackTrending>
         <type>Email</type>
         <unique>false</unique>
-
+    </fields>
+    <fields>
+        <fullName>Field_Five__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Field_Five</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
     </fields>
     <validationRules>
-
         <fullName>DemoValidationRuleOne</fullName>
         <active>true</active>
         <description>created for Demo.</description>
@@ -191,7 +196,6 @@
  Field_One__c,
  ISBLANK(Field_Two__c)
 )</errorConditionFormula>
-
         <errorMessage>Please enter Field two if Field one is checked.</errorMessage>
     </validationRules>
 </CustomObject>
